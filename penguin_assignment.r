@@ -10,6 +10,9 @@
 # Initial setup
 #--------
 
+# Set the working directory - this is not hard-coded to ensure reproducibility 
+
+
 # Load libraries from file
 source("functions/libraries.R")
 
@@ -29,7 +32,7 @@ penguins_raw <- read.csv("data_raw/penguins_raw.csv")
 # Clean the data
 #---------
 
-# To clean column names, remove empty rows and columns and remove columns called delta and comments.
+# To clean column names, remove empty rows and columns and remove columns called delta and comments
 penguins_clean <- cleaning(penguins_raw)
 
 ## Check the cleaned data before saving
